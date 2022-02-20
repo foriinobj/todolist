@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(85, 78, 72);
+}
+
+.app {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.task {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background-color: #a59c94ff;
+  border-bottom: 2px solid #d32e5eff;
+  transition: all 0.1s;
+}
+
+.task input {
+  width: 425px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: black;
+  transition: all 0.1s;
+}
+
+.task input:focus {
+  text-indent: 15px;
+}
+
+.task div {
+  font-size: 1.5rem;
+  flex: 1;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  color: #d32e5eff;
+}
+
+.task .enter {
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.task .enter:hover {
+  text-shadow: 0 0 2px #d32e5eff;
+}
+
+.list {
+  height: 320px;
+  width: 100%;
+  background-color: #a59c94ff;
+}
+
+.list .head {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  border-bottom: 2px solid rgb(63, 58, 53);
+}
+
+.list .icon {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ae0e36ff;
+}
+
+.list .filters {
+  width: 462.5px;
+  direction: rtl;
+}
+
+.list .filters span {
+  margin: 0 5px 0 5px;
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(211, 203, 195);
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  transition: all 0.1s;
+}
+
+.list .filters span:hover {
+  color: #ae0e36ff;
+  background-color: rgb(63, 58, 53);
+}
+
+.list .filters .active {
+  background-color: rgb(63, 58, 53);
+  color: #d32e5eff;
+}
+
+.missions {
+  width: 100%;
+  height: 278px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.list .mission {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid rgba(63, 58, 53, 0.7);
+}
+
+.list .mission .complete {
+  width: 37.5px;
+  text-align: center;
+  height: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.list .mission .complete:hover {
+  text-shadow: 0 0 2px black;
+}
+
+.list .mission .text {
+  flex: 1;
+  height: 100%;
+  text-indent: 15px;
+}
+
+.list .mission .remove {
+  width: 37.5px;
+  text-align: center;
+  height: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.1s;
+  color: #d32e5eff;
+}
+
+.list .mission .remove:hover {
+  text-shadow: 0 0 2px #ae0e36ff;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="wrapper">
+        <div class="task">
+          <div>⚌</div>
+          <input id="taskText" type="text" placeholder="Enter your task" />
+          <div class="enter" id="enter">▶</div>
+        </div>
+
+        <div class="list">
+          <div class="head">
+            <div class="icon">☰</div>
+            <div class="filters">
+              <span id="fTodo" onclick="filterTasks('todo', 'fTodo')"
+                >TODO</span
+              >
+              <span id="fDone" onclick="filterTasks('done', 'fDone')"
+                >DONE</span
+              >
+              <span
+                id="fAll"
+                onclick="filterTasks('all', 'fAll')"
+                class="active"
+                >ALL</span
+              >
+            </div>
+          </div>
+          <div class="missions" id="list"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
